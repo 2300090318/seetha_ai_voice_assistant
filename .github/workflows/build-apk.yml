@@ -38,8 +38,8 @@ jobs:
           
           # Force Android Configuration to match heavy plugins (FFmpeg requires min 24)
           sed -i 's/flutter.minSdkVersion/24/g' android/app/build.gradle
-          sed -i 's/flutter.compileSdkVersion/34/g' android/app/build.gradle
-          sed -i 's/flutter.targetSdkVersion/34/g' android/app/build.gradle
+          sed -i 's/flutter.compileSdkVersion/36/g' android/app/build.gradle
+          sed -i 's/flutter.targetSdkVersion/36/g' android/app/build.gradle
           
           # Restore our custom code
           cp backup_pubspec.yaml pubspec.yaml
