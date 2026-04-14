@@ -41,6 +41,9 @@ jobs:
           sed -i 's/flutter.compileSdkVersion/36/g' android/app/build.gradle
           sed -i 's/flutter.targetSdkVersion/36/g' android/app/build.gradle
           
+          # Force legacy Maven Central discovery for FFmpeg Kit
+          echo "allprojects { repositories { google(); mavenCentral() } }" >> android/build.gradle
+          
           # Restore our custom code
           cp backup_pubspec.yaml pubspec.yaml
           cp -r backup_lib/* lib/
