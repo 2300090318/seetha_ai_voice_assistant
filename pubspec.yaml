@@ -23,7 +23,6 @@ dependencies:
   colorfilter_generator: ^0.0.8
 
   # Video Editing
-  ffmpeg_kit_flutter: ^5.1.0
   video_player: ^2.8.2
   video_thumbnail: ^0.5.3
 
